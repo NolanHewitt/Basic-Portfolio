@@ -1,3 +1,5 @@
+*{margin: 0; padding: 0; border: 0; outline: 0;}
+
 .main-container {
     text-align: center;
   }
@@ -10,12 +12,49 @@
   }
 
   h2 {
-    color: #4aaaa5;
     text-align: left;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 35px;
   }
 
   #About {
-    font-size: 40px;
+    color: #4aaaa5;
     margin-left: 30px;
   }
+
+  #name {
+    color: white;
+  }
+
+  #aboutbox {
+    color: grey;
+  }
+
+  #portfoliobox {
+    color: grey;
+  }
+
+  #contactbox {
+    color: grey;
+  }
+
+  #first-text {
+    line-height: 2.0;
+    font-size: 18px;
+    color: grey;
+  }
+
+  #copyright {
+    color: white;
+  }
+
+  a {
+    color: grey;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
