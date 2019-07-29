@@ -1546,8 +1546,8 @@ input[type=submit]:hover {
       .mainsection1 {
         background-color: white;
         display: inline-block;
-        width:475px;
-        height:1070px;
+        width:450px;
+        height:1110px;
         margin-top: 160px;
         margin-bottom: 100px;
         background-color: #ffffff;
@@ -1559,7 +1559,7 @@ input[type=submit]:hover {
       .mainsection2 {
         background-color: white;
         display: inline-block;
-        width:475px;
+        width:450px;
         height:695px;
         margin-top: 150px;
         margin-bottom: 100px;
