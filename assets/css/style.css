@@ -1529,3 +1529,314 @@ input[type=submit]:hover {
     
     
     }      
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/*Screen Size smaller than 575px (minimum size of 500)*/
+@media (max-width: 575px) {
+
+  *{margin: 0; padding: 0; border: 0; outline: 0;
+    color: #777777}
+    
+    .main-container {
+        text-align: center;
+      }
+    
+      .mainsection1 {
+        background-color: white;
+        display: inline-block;
+        width:475px;
+        height:1070px;
+        margin-top: 160px;
+        margin-bottom: 100px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
+      .mainsection2 {
+        background-color: white;
+        display: inline-block;
+        width:475px;
+        height:695px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
+      #underline {Width:410px}
+    
+      h2 {
+        text-align: left;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+      }
+    
+      #About {
+        color: #4aaaa5;
+        margin-left: 30px;
+      }
+    
+      #name {
+        color: white;
+      }
+    
+      #contentcontainer {
+        margin-top: 0px;
+      }
+    
+      #border {
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border-bottom: 2px solid #cccccc;
+        position: absolute;
+        z-index:1;
+      }
+    
+      #aboutbox {
+        color: grey;
+        width: 53px;
+        height: 20px;
+        margin-left: 385px;
+        position: absolute;
+        z-index:2;
+        font-size: 20px;
+        margin-top: 5px;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      }
+    
+      #portfoliobox {
+        color: grey;
+        width: 75px;
+        height: 20px;
+        margin-left: 385px;
+        position: absolute;
+        z-index:3;
+        font-size: 20px;
+        margin-top: 35px;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      }
+    
+      #namebox {width: 300px;
+        height: 100px;
+        margin-left: 25px;
+        background-color: #4aaaa5;
+        position: absolute;
+        z-index:2;}
+    
+      #contactbox {
+        color: grey;
+        width: 70px;
+        height: 20px;
+        margin-left: 385px;
+        position: absolute;
+        z-index:4;
+        font-size: 20px;
+        margin-top: 65px;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      }
+    
+      #indent1 {
+        position:absolute;
+        z-index:4;
+        margin-left: 522px;
+        opacity: 0;
+      }
+    
+      #indent2 {
+        position:absolute;
+        z-index:4;
+        margin-left: 649px;
+        opacity: 0;
+      }
+    
+      #first-text {
+        line-height: 2.0;
+        font-size: 17.8px;
+        color: grey;
+      }
+    
+      #copyright {
+        color: white;
+      }
+    
+      a {
+        color: grey;
+    }
+    
+    a:hover 
+    {
+         color:#00A0C6; 
+         text-decoration:none; 
+         cursor:pointer;  
+    }
+    
+      .projects {
+        transition: all 0.0s ease;
+    }
+    
+      .projects:hover {
+        opacity: 0.4;
+    }
+    
+    #project1 {
+      width:200px;
+      height:160px;
+      float: left;
+      margin-right: 25px;
+      margin-left: 1px;
+      position: relative;
+    }
+    
+    #project2 {
+      width:200px;
+      height:160px;
+      float: left;
+      margin-right: 5px;
+      position: relative;
+    }
+    
+    #project3 {
+      width:200px; 
+      height:160px;
+      margin-top: 25px;
+      float: left;
+      position: relative;
+    }
+    
+    #project4 {
+      width:200px;
+      height:160px;
+      float: left;
+      margin-right: 0px;
+      margin-left: 25px;
+      margin-top: -40px;
+      position: relative;
+    }
+    
+    #project5 {
+      width:200px;
+      height:160px;
+      float: left;
+      margin-right: 25px;
+      margin-top: 25px;
+      position: relative;
+    }
+    
+    #project6 {
+      width:200px;
+      height:160px;
+      float: left;
+      margin-right: 0px;
+      margin-top: 25px;
+      position: relative;
+    }
+    
+    #projectdescription1 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 1px;
+                margin-top: 110px;
+    }
+    
+    #projectdescription2 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 226px;
+                margin-top: 110px;
+    }
+    
+    #projectdescription3 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 0px;
+                margin-top: 295px;
+    }
+    
+    #projectdescription4 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 225px;
+                margin-top: 70px;
+    }
+    
+    #projectdescription5 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 0px;
+                margin-top: 255px;
+    }
+    
+    #projectdescription6 {
+                background-color: #4aaaa5;
+                width:200px;
+                height: 40px;
+                position:absolute;
+                margin-left: 225px;
+                margin-top: 255px;
+    }
+
+    .Rlinks:active {background-color: yellow}
+    
+    .ProjectText {color: white;
+                  font-size: 20px;
+                  text-align: center;
+                  margin-top: 5%}
+    
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */  
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    input[type=email], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */  
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #4aaaa5;;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .indent {font-size: 20px;
+             margin-top: 33.5px;               }
+    
+    
+    }
