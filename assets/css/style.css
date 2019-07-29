@@ -8,7 +8,19 @@ color: #777777}
     text-align: center;
   }
 
-  .mainsection {
+  .mainsection1 {
+    background-color: white;
+    display: inline-block;
+    width:960px;
+    height:580px;
+    margin-top: 150px;
+    background-color: #ffffff;
+    border:1px solid #dddddd;
+    text-align:center;
+    float: center;
+  }
+
+  .mainsection2 {
     background-color: white;
     display: inline-block;
     width:960px;
@@ -302,7 +314,7 @@ input[type=submit]:hover {
         text-align: center;
       }
     
-      .mainsection {
+      .mainsection1 {
         background-color: white;
         display: inline-block;
         width:960px;
@@ -314,6 +326,18 @@ input[type=submit]:hover {
         float: center;
       }
     
+      .mainsection2 {
+        background-color: white;
+        display: inline-block;
+        width:960px;
+        height:580px;
+        margin-top: 150px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
       #underline {Width:900px}
 
       h2 {
@@ -597,7 +621,19 @@ input[type=submit]:hover {
         text-align: center;
       }
     
-      .mainsection {
+      .mainsection1 {
+        background-color: white;
+        display: inline-block;
+        width:900px;
+        height:615px;
+        margin-top: 150px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
+      .mainsection2 {
         background-color: white;
         display: inline-block;
         width:900px;
@@ -891,11 +927,23 @@ input[type=submit]:hover {
         text-align: center;
       }
     
-      .mainsection {
+      .mainsection1 {
         background-color: white;
         display: inline-block;
         width:745px;
-        height:700px;
+        height:711px;
+        margin-top: 150px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
+      .mainsection2 {
+        background-color: white;
+        display: inline-block;
+        width:745px;
+        height:560px;
         margin-top: 150px;
         background-color: #ffffff;
         border:1px solid #dddddd;
@@ -1185,11 +1233,24 @@ input[type=submit]:hover {
         text-align: center;
       }
     
-      .mainsection {
+      .mainsection1 {
         background-color: white;
         display: inline-block;
         width:560px;
-        height:910px;
+        height:927.5px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        background-color: #ffffff;
+        border:1px solid #dddddd;
+        text-align:center;
+        float: center;
+      }
+
+      .mainsection2 {
+        background-color: white;
+        display: inline-block;
+        width:560px;
+        height:820px;
         margin-top: 150px;
         margin-bottom: 100px;
         background-color: #ffffff;
