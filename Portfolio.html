@@ -18,91 +18,46 @@
 
     <Header>
 
-            <div id="border"
-            style="width: 100%;
-                   height: 100px;
-                   background-color: white;
-                   border-bottom: 2px solid #cccccc;
-                   position: absolute;
-                   z-index:1;">
+<!--Main Box for the header-->
+            <div id="border">
 
+<!--Container for all header content-->  
+<div id=contentcontainer>
+
+<!--Box for link to about page-->
 <div   class="Rlinks"
-       id="aboutbox"
-       style="width: 53px;
-            height: 20px;
-            margin-left: 1020px;
-            position: absolute;
-            z-index:2;
-            font-size: 20px;
-            margin-top: 35px;
-            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-            "><a style="text-decoration:none" href="./Index.html">About</a></div>
+       id="aboutbox"><a style="text-decoration:none" href="./Index.html">About</a></div>
 
-<div style="position:absolute;
-z-index:4;
-margin-left: 1097px;
-opacity: 0.25;
-"><p class="indent">|</p></div>  
+<!--Indent between about and porfolio links--> 
+<div id=indent1><p class="indent">|</p></div>  
 
+<!--Box for link to portfolio page-->
 <div   class="Rlinks"
        id="portfoliobox"
-       style="width: 75px;
-       height: 20px;
-       margin-left: 1125px;
-       position: absolute;
-       z-index:3;
-       font-size: 20px;
-       margin-top: 35px;
-       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-       "><a style="text-decoration:none" href="./Portfolio.html">Portfolio</a></div>
+       ><a style="text-decoration:none" href="./Portfolio.html">Portfolio</a></div>
 
-<div style="position:absolute;
-z-index:4;
-margin-left: 1224px;
-opacity: 0.25;
-"><p class="indent">|</p></div>  
+<!--Indent between porfolio and contact links-->       
+<div id="indent2"><p class="indent">|</p></div>   
 
+<!--Box for link to contact page-->
 <div   class="Rlinks"
-       id="contactbox"
-       style="width: 70px;
-       height: 20px;
-       margin-left: 1250px;
-       position: absolute;
-       z-index:4;
-       font-size: 20px;
-       margin-top: 35px;
-       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-       "><a style="text-decoration:none" href="./contact.html">Contact</a></div>
-
+       id="contactbox"><a style="text-decoration:none" href="./contact.html">Contact</a></div>
 </div>
 
-        <div id="namebox"
-             style="width: 300px;
-                    height: 100px;
-                    margin-left: 373px;
-                    background-color: #4aaaa5;
-                    position: absolute;
-                    z-index:2;">
-
+        <div id="namebox">
         <h2 id="name"
             style="text-align: center;
                    margin-top: 25px;
                    font-size: 35px;">Nolan Hewitt</h2>
-
         </div>
+
+</div>
 
     </Header>
 
     <!--Main content box-->
 <div class="main-container">
-    <div class="mainsection"
-         style="width:960px;
-                height:700px;
-                margin-top: 150px;
-                background-color: #ffffff;
-                border:1px solid #dddddd;
-                text-align:center;
-                float: center;">
+    <div class="mainsection">
 
                 <!--Header text-->
                 <h2 id="About"
@@ -111,13 +66,12 @@ opacity: 0.25;
                 >Portfolio</h2>
 
                 <!--Line in box under header text-->
-<div id="underline"
-style= "Width:900px;
-        height: 2px;
-        background-color: lightgrey;
-        margin-left: 30px;
-        margin-top: 30px;">
-</div>
+                <div id="underline"
+                style= "height: 2px;
+                        background-color: lightgrey;
+                        margin-left: 30px;
+                        margin-top: 30px;">
+                </div>
 
 <!--Images Row 1 Here-->
 <div style="margin-left: 3.25%;
@@ -125,61 +79,23 @@ style= "Width:900px;
 
             <!--Project 1-->
 <a href="https://www.google.com/" target="_blank">
-       <img class="projects" src="./assets/images/cat3.jpg" alt="cat3" style="width:250px;
-                                                                       height:200px;
-                                                                       float: left;
-                                                                       margin-right: 72.5px;
-                                                                       margin-left: 1px;
-                                                                       position: relative;">
+       <img id="project1" class="projects" src="./assets/images/cat3.jpg" alt="cat3">
 
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-            width:250px;
-            height: 50px;
-            position:absolute;
-            margin-left: 1px;
-            margin-top: 137.5px"
-><p class="ProjectText">Project 1</p></div>
-
+<div id="projectdescription1"><p class="ProjectText">Project 1</p></div>
 </a>           
           
            <!--Project 2-->
 <a href="https://www.google.com/" target="_blank">
-       <img class="projects" src="./assets/images/cat4.jpg" alt="cat4" style="width:250px;
-                                                                       height:200px;
-                                                                       float: left;
-                                                                       margin-right: 72.5px;
-                                                                       position: relative;">  
+       <img id="project2" class="projects" src="./assets/images/cat4.jpg" alt="cat4">  
                                                                       
-
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-            width:250px;
-            height: 50px;
-            position:absolute;
-            margin-left: 324px;
-            margin-top: 137.5px"
-><p class="ProjectText">Project 2</p></div>
-
+<div id="projectdescription2"><p class="ProjectText">Project 2</p></div>
 </a>
 
            <!--Project 3--> 
 <a href="https://www.google.com/" target="_blank">
-       <img class="projects" src="./assets/images/cat5.jpg" alt="cat5" style="width:250px; 
-                                                                        height:200px;
-                                                                        float: left;
-                                                                        margin-right: 0px;
-                                                                        position: relative;">                                                                                                                      
+       <img id="project3" class="projects" src="./assets/images/cat5.jpg" alt="cat5">                                                                                                                      
 
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-            width:250px;
-            height: 50px;
-            position:absolute;
-            margin-left: 646px;
-            margin-top: 137.5px"
-><p class="ProjectText">Project 3</p></div>
-
+<div id="projectdescription3"><p class="ProjectText">Project 3</p></div>
 </a>
 </div>
 
@@ -189,60 +105,23 @@ style="background-color: #4aaaa5;
 
             <!--Project 4-->
 <a href="https://www.google.com/" target="_blank">            
-       <img class="projects" src="./assets/images/cat6.jpg" alt="cat6" style="width:250px;
-                                                                       height:200px;
-                                                                       float: left;
-                                                                       margin-right: 72.5px;
-                                                                       margin-left: 1px;
-                                                                       position: relative;">
+       <img id="project4" class="projects" src="./assets/images/cat6.jpg" alt="cat6">
 
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-width:250px;
-height: 50px;
-position:absolute;
-margin-left: 1px;
-margin-top: 137.5px"
-><p class="ProjectText">Project 4</p></div>
-
+<div id="projectdescription4"><p class="ProjectText">Project 4</p></div>
 </a>
 
             <!--Project 5-->
 <a href="https://www.google.com/" target="_blank">
-       <img class="projects" src="./assets/images/cat7.jpg" alt="cat7" style="width:250px;
-                                                                       height:200px;
-                                                                       float: left;
-                                                                       margin-right: 72.5px;
-                                                                       position: relative;">  
+       <img id="project5" class="projects" src="./assets/images/cat7.jpg" alt="cat7">  
 
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-width:250px;
-height: 50px;
-position:absolute;
-margin-left: 324px;
-margin-top: 137.5px"
-><p class="ProjectText">Project 5</p></div>
-
+<div id="projectdescription5"><p class="ProjectText">Project 5</p></div>
 </a>
 
            <!--Project 6-->    
 <a href="https://www.google.com/" target="_blank">              
-       <img class="projects" src="./assets/images/cat8.jpg" alt="cat8" style="width:250px;
-                                                                        height:200px;
-                                                                        float: left;
-                                                                        margin-right: 0px;
-                                                                        position: relative;">                                                                                                                      
+       <img id="project6" class="projects" src="./assets/images/cat8.jpg" alt="cat8">                                                                                                                      
 
-<div class="projectdescription"
-style="background-color: #4aaaa5;
-width:250px;
-height: 50px;
-position:absolute;
-margin-left: 646px;
-margin-top: 137.5px"
-><p class="ProjectText">Project 6</p></div>
-
+<div id="projectdescription6"><p class="ProjectText">Project 6</p></div>
 </a>
 
 </div>                                                                                                              
@@ -258,7 +137,7 @@ margin-top: 137.5px"
 <div   style="width: 100%;
        height: 70px;
        background-color: #666666;
-       position: absolute;
+       position: fixed;
        bottom: 0;
        z-index:2;
        border-top: 8px solid #4aaaa5;
