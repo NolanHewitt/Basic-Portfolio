@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/howtoplay.css">
+    <link href="./intro.html">
+    <title>Carebare Game</title>
+</head>
+<body style='font-family:"menufont"'>
+  <!--Want to play a game? mp3 play function--> 
+  <audio id ="audio" src="assets/audio/game.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+      function play(){
+           var audio = document.getElementById("audio");
+           audio.play();
+                     }
+       </script>
+    
+    
+  <!--Style class for intro-->
+        <div class="bg-image"></div>
+
+        <div class="bg-text">
+          <h2>Wanna Play a Game?</h2>
+          <br>
+          <form id=userinput>
+            How old are you? <input type="number" id="age" name="age">
+            <input type="submit" value="Submit" id="submit" onclick="play()">
+          </form>
+          <br>
+          <p id="tooyoung"></p>
+          <button style="display: none;" id="start" onclick="window.location.href = './intro.html';"> <h1 style="font-size:80px; font-family: 'menufont'">Play the Game</h1> </button>
+        </div>
+        
+
+        <!-- Local Forage File-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
+            integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
+        <script>console.log('localforage is: ', localforage);</script>
+        <!-- My javascript file -->
+        <script src="assets/javascript/howtoplay.js"></script>
+</body>
+</html>

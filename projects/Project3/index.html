@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carebare Game</title>
+  <!--CSS File-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- stats Box CSS -->
+  <link rel="stylesheet" href="./assets/css/stats.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- stats Box CSS -->
+  <link rel="stylesheet" href="./assets/css/stats.css">
+  <!-- Game Menu CSS File-->
+  <link rel="stylesheet" href="assets/css/gameMenu.css">
+  <!-- W3 School CSS File -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Characards Modal CSS File-->
+  <link rel="stylesheet" href="./assets/css/characards.css">
+  <!-- stats Box CSS -->
+  <link rel="stylesheet" href="./assets/css/stats.css">
+  <!-- how to play html/css-->
+  <link rel="howtoplay.html">
+  <link rel="howtoplay.css">
+</head>
+
+<body>
+
+      <!------------------------------Grid Layout for First Overworld------------------------------>
+            <div class="grid-container">     </div>
+            <div class="giphy"></div>
+        <!----------------------------------------------------------------------------------------->
+        
+        <!-- <section class="star-wars2">
+                <div class="crawl">
+                
+                  <div class="title">
+                  
+                    <p>Beware</p>
+                    <p>Those who shall not care, will end in defeat with the Care Bear stare</p>
+                  </div>
+                  
+                  <p>Once upon a time in a land far away, thousands of years ago, millions of Care Bears thrived across the land we know as Care de Casa…. 
+                    
+                    Care Bears lived here with rainbows, positivity, and chocolate trees… 
+                    
+                    <p>Then one day out of the sky the suited man landed on the land of positivity and made the thirteen colonies. What was once a land full of sunshine and rainbows, became thirteen sectors of concrete, raining taxi cabs, and suited man… a.k.a. presidents… with mystical powers. 
+            
+                    What has happened to the Care Bear population, is unfathomable… </p>
+                    
+                   <p>A moment of silence....</p> 
+                    
+                    
+                   <p>Today, there only remains five Care Bears who have been in hiding, unknown as to where the rest of their Care Bear Crew has vanished to… while the thirteen colonies have prospered in unity of a grand patriotic ceremony. </p>
+                    
+                     <p> The Presidents know nothing of what is about to come. 
+                       The fiery and passion of the Care in the Bears is back. The Care Bears are ready to use their powers and stares that scare… to take back the land that was once lollipops and chocolate trees… and maybe just maybe… find the rest of the Care Bears and declare their independence to have the land of Care de Casa free of the suited man again...</p> 
+                    
+              
+                </div>
+            </section> -->
+
+
+        <div id=controls>
+                <span id=exitcontrols onclick="hidecontrols()" style="margin-right: 20px; color: white; font-size: 30px; float:right;">&times;</span>
+            <p>W: Moves Up</p>
+            <p>A: Moves Left</p>
+            <p>S: Moves Down</p>
+            <p>D: Moves Right</p>
+            <p>Each enemy defeated adds a color to the experience bar. Complete the rainbow to level up.</p>
+            <p>When HP is zero the game is over.</p>
+            <p>Good Luck!</p>
+        </div>
+
+
+      <!------------------Text Boxes-------------------->
+      <div id=trumptextbox>
+          <img id="trumpert" src="./assets/images/presidents/trumpert.png">
+          <p class="texter">I am Trump. I'm a character?</p>
+          <button id="endbutton" onclick="TrumpFunction()" type="button">Exit</button>
+      </div>
+
+      <div id=obamatextbox>
+          <img id="obamert" src="./assets/images/presidents/obamert.png">
+          <p class="texter">I am Obama. I am also here as well?</p>
+          <button id="endbutton" onclick="ObamaFunction()" type="button">Exit</button>
+      </div>
+
+      <div id=lincolntextbox>
+        <img id="lincolnert" src="./assets/images/presidents/lincolnert.png">
+        <p class="texter">I am Lincoln. I am also here as well?</p>
+        <button id="endbutton" onclick="LincolnFunction()" type="button">Exit</button>
+    </div>
+
+      <div id=putintextbox>
+          <img id="putinert" src="./assets/images/presidents/putinert.png">
+          <p id="health"></p>
+          <p id="putinhealth"></p>
+          <img id="battlebear" src="./assets/images/carebears/carebare.png">
+          <button id="attack" onclick="putinfight()" type="button">Attack</button>
+          <button id="endbuttonfight" onclick="PutinFunction()" type="button">Exit</button>
+      </div>
+<!--Reagan Battle-->
+      <div id=reagantextbox>
+        <img id="reaganert" src="./assets/images/presidents/reaganert.png">
+        <p id="health2"></p>
+        <p id="reaganhealth"></p>
+        <img id="battlebear2" src="./assets/images/carebears/carebare.png">
+        <button id="attack2" onclick="reaganfight()" type="button">Attack</button>
+        <button id="endbuttonfight2" onclick="ReaganFunction()" type="button">Exit</button>
+    </div>
+    <!--Kim Battle-->
+    <div id=kimtextbox>
+      <img id="kimert" src="./assets/images/presidents/kimert.png">
+      <p id="health3"></p>
+      <p id="kimhealth"></p>
+      <img id="battlebear3" src="./assets/images/carebears/carebare.png">
+      <button id="attack3" onclick="kimfight()" type="button">Attack</button>
+      <button id="endbuttonfight3" onclick="KimFunction()" type="button">Exit</button>
+  </div>
+  <!--Hillary Battle-->
+  <div id=hillarytextbox>
+    <img id="hillaryert" src="./assets/images/presidents/hillaryert.png">
+    <p id="health4"></p>
+    <p id="hillaryhealth"></p>
+    <img id="battlebear4" src="./assets/images/carebears/carebare.png">
+    <button id="attack4" onclick="hillaryfight()" type="button">Attack</button>
+    <button id="endbuttonfight4" onclick="HillaryFunction()" type="button">Exit</button>
+</div>
+<!--Boris Battle-->
+<div id=boristextbox>
+  <img id="borisert" src="./assets/images/presidents/borisert.png">
+  <p id="health5"></p>
+  <p id="borishealth"></p>
+  <img id="battlebear5" src="./assets/images/carebears/carebare.png">
+  <button id="attack5" onclick="borisfight()" type="button">Attack</button>
+  <button id="endbuttonfight5" onclick="BorisFunction()" type="button">Exit</button>
+</div>
+<!--Dut Battle-->
+<div id=duttextbox>
+  <img id="dutert" src="./assets/images/presidents/dutert.png">
+  <p id="health6"></p>
+  <p id="duthealth"></p>
+  <img id="battlebear6" src="./assets/images/carebears/carebare.png">
+  <button id="attack6" onclick="dutfight()" type="button">Attack</button>
+  <button id="endbuttonfight6" onclick="DutFunction()" type="button">Exit</button>
+</div>
+<!--Mike Battle-->
+<div id=miketextbox>
+  <img id="mikert" src="./assets/images/presidents/mikert.png">
+  <p id="health7"></p>
+  <p id="mikehealth"></p>
+  <img id="battlebear7" src="./assets/images/carebears/carebare.png">
+  <button id="attack7" onclick="mikefight()" type="button">Attack</button>
+  <button id="endbuttonfight7" onclick="MikeFunction()" type="button">Exit</button>
+</div>
+<!--Trump Battle-->
+<div id=trump2textbox>
+  <img id="final" src="./assets/images/presidents/trumpert2.png">
+  <p id="health8"></p>
+  <p id="trump2health"></p>
+  <img id="battlebear8" src="./assets/images/carebears/carebare.png">
+  <button id="attack8" onclick="trump2fight()" type="button">Attack</button>
+  <button id="endbuttonfight8" onclick="Trump2Function()" type="button">Exit</button>
+</div>
+
+  <!-- stats box -->
+  <div class="statsBox">
+    <!-- icon -->
+    <div id="profile" class="icon">
+        <!-- <img src="./assets/images/carebears/carebare.png"> -->
+    </div>
+    <!-- Health bar -->
+    <div class="healthBar">
+          <p id="php" class="noMargin">100/100</p>
+    </div>
+    <div class="statBar">
+            <p id="pdef" class="noMargin"></p>
+            <p id="patk" class="noMargin"></p>
+      </div>
+    <!-- Exp bar -->
+    <div class="expBarDiv">
+        <p class="noMargin">Experience</p>
+        <!-- WE ARE GOING TO HAVE TO DYNAMICALLY CHANGE THIS WHEN WE DEFEAT ENEMIES, OTHER PNGS IN THE FOLDER -->
+        <img src="https://i.ibb.co/CVDM471/0-7-Exp-copy.png" class="expBar">
+    </div>
+  </div>
+
+      <div id="levelUpBox" class="boxDisappear">
+        <!-- <img id="obamert" src="./assets/images/presidents/obamert.png"> -->
+        <p class="texter3">Level Up!</p>
+    </div>
+
+     <!----> 
+
+
+
+        <!-- Character Image -->
+        <img src="./assets/images/carebears/carebare.png" alt="" id="stickfigure" class="img stick">  
+
+<!--------------------------------------MODAL CAROUSEL Character Select------------------------------->
+        <!--Game Options and Trigger/Open-->
+        <div class="dropdown">
+          <button class="modalMenu dropbtn" ></button>
+          <div class="dropdown-content">
+            <a href="intropopup.html" target="_blank">Game Intro</a>
+            <a onclick="showcontrols()" href="#">How to Play</a>
+            <a id="characterBtn">Character Select</a>
+             <!--Update button css so that it looks like a menu item and not a button-->
+          </div>
+        </div>
+        <!-- The Character Select Modal -->
+        <div id="characterModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div id="grad1" class="modal-header"> <!-- Rainbow gradient header -->
+          <span class="close">&times;</span>
+          <h2></h2>
+        </div>
+        <!-- Modal clearfix -->
+        <div class="clearfix">
+          
+        <!-- GRUMPY BEAR CARD -->
+        <div class="modal-body img-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/carebears/grumpy-bear.png" alt="GrumpyBearAvatar" style="width:100%">
+              </div>
+              <div class="flip-card-back">
+                <p><strong>Grumpy Bear</strong> blasts presidents with doom and gloom</p> 
+                <p>We love that guy!</p>
+                <div class="container">
+                  <div class="char1Defense">Defense: 2</div>
+                </div>
+                <p></p>
+                <div class="container">
+                  <div class="char1Attack">Attack: 7</div>
+                </div>
+                <br>
+                <button class="character1">Click Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LOVE-A-LOT BEAR CARD-->
+        <div class="modal-body img-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/carebears/lovealot-bear.png" alt="LovealotBearAvatar" style="width:100%">
+              </div>
+              <div class="flip-card-back">
+                <p><strong>Love-a-lot Bear</strong> squeezes his enemy to death with his overwhelming love</p> 
+                <p>We love that guy!</p>
+                <div class="container">
+                  <div class="char2Defense">Defense: 7</div>
+                </div>
+                <p></p>
+                <div class="container">
+                  <div class="char2Attack">Attack: 2</div>
+                </div>
+                <br>
+                <button class="character2">Click Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FUNSHINE BEAR CARD-->
+        <div class="modal-body img-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/carebears/funshine-bear.png" alt="FunshineBearAvatar" style="width:100%">
+              </div>
+              <div class="flip-card-back">
+                <p><strong>Funshine Bear</strong> will burn his enemies if they get too close</p> 
+                <p>We love that guy!</p>
+                <div class="container">
+                  <div class="char3Defense">Defense: 4</div>
+                </div>
+                <p></p>
+                <div class="container">
+                  <div class="char3Attack">Attack: 5</div>
+                </div>
+                <br>
+                <button class="character3">Click Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- FRIEND BEAR CARD-->
+         <div class="modal-body img-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/carebears/friend-bear.png" alt="FriendBearAvatar" style="width:100%">
+              </div>
+              <div class="flip-card-back">
+                <p><strong>Friend Bear</strong> keeps his enemies REAL close</p> 
+                <p>We love that guy!</p>
+                <div class="container">
+                  <div class="char4Defense">Defense: 5</div>
+                </div>
+                <p></p>
+                <div class="container">
+                  <div class="char4Attack">Attack: 4</div>
+                </div>
+                <br>
+                <button class="character4">Click Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CHEER BEAR CARD-->
+        <div class="modal-body img-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/carebears/cheer-bear.png" alt="CheerBearAvatar" style="width:100%">
+              </div>
+              <div class="flip-card-back">
+                <p><strong>Cheer Bear</strong> can turn at any moment....</p> 
+                <p>We love that guy!</p>
+                <p></p>
+                <div class="container">
+                  <div class="char5Defense">Defense: 6</div>
+                </div>
+                <p></p>
+                <div class="container">
+                  <div class="char5Attack">Attack: 3</div>
+                </div>
+                <br>
+                <button class="character5">Click Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="grad1" class="modal-footer"> <!-- Rainbow gradient footer -->
+          <h3></h3>
+        </div>
+        </div>
+
+
+
+<!------------------------------------------------------------------------------------------------------>
+
+        <!-- This is the axios js script -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!--Overworld javascript-->  
+        <script src="./assets/javascript/game.js"></script>
+        <script src="assets/javascript/apiFetch.js"></script>
+        <script src="assets/javascript/battle.js"></script>
+
+</body>
+</html>

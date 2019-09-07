@@ -2,6 +2,7 @@ body {
     background-image: url("../images/eclipse.jpg");    
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
     font-size: 40px
      };

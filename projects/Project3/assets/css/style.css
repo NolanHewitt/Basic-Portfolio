@@ -1,0 +1,859 @@
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  background-color: #2196F3;
+  position: absolute;
+  z-index: -1;
+  display: all;
+  /* height: fit-content; */
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  border: 1px solid rgba(255, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+#stickfigure {
+  position: absolute;
+  z-index: 20; 
+  z-index: 2; 
+  top: 427.9px; 
+  left: 310.4px;
+  height: 100px;
+  width: 80px;
+}
+
+
+#controls{
+  position: fixed;
+  top: 49.95%;
+  left: 49.99%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 318px;
+  width: 502.5px;
+  display: none;
+  z-index: 21;
+  font-family: dialoguefont;
+}
+
+#exitcontrols:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#trumptextbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 105px;
+  width: 300px;
+  display: none;
+  z-index: 21;
+}
+
+#trumpert {
+  height: 110px;
+  width: 100px;
+  position: absolute;
+    margin-top: -10px;
+}
+
+#final {
+  height: 175px;
+  width: 175px;
+  position: absolute;
+    margin-top: -35px;
+    margin-left: 570px;
+}
+
+#obamatextbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 105px;
+  width: 300px;
+  display: none;
+  z-index: 21;
+}
+
+#lincolntextbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 105px;
+  width: 300px;
+  display: none;
+  z-index: 21;
+}
+
+#obamert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+
+#lincolnert {
+  height: 100px;
+  width: 95px;
+  position: absolute;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+
+#putintextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#reagantextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#kimtextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#hillarytextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#boristextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#duttextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#miketextbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#trump2textbox {
+  position: fixed;
+  top: 50%;
+  left: 49.98%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  display: "";
+  height: 300px;
+  width: 703px;
+  display: none;
+  z-index: 21;
+}
+
+#levelUpBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  /* display: ""; */
+  height: 100px;
+  width: 300px;
+  /* display: none; */
+  z-index: 21;
+}
+
+#putinert {
+  height: 110px;
+  width: 100px;
+  position: absolute;
+    margin-top: -5px;
+    margin-left: 600px;
+}
+
+#reaganert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#kimert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#hillaryert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#borisert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#dutert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#mikert {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+}
+
+#battlebear {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear2 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear3 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear4 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear5 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear6 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear7 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear8 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#battlebear9 {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#health {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health2 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health3 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health4 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health5 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health6 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health7 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health8 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#health9 {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+#attack {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack2 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack3 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack4 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack5 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack6 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack7 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack8 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#attack9 {
+  position: absolute;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+#putinhealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#reaganhealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#kimhealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#hillaryhealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#borishealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#duthealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#mikehealth {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#trump2health {
+  position: absolute;
+    margin-top: 110px;
+    margin-left: 640px;
+}
+
+#endbutton {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 65px;
+  margin-left: 267.5px;
+}
+
+#endbuttonfight {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight2 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight3 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight4 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight5 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight6 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight7 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight8 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+#endbuttonfight9 {
+  position: absolute;
+  height: 40px;
+  z-index: 25;
+  margin-top: 260px;
+  margin-left: 670.5px;
+  display: none;
+}
+
+.texter{
+  position: absolute;
+    margin-top: 25px;
+    margin-left: 85px;
+    font-family: dialoguefont;
+}
+
+.texter2{
+  position: absolute;
+    margin-top: 25px;
+    margin-left: 0px;
+    font-family: dialoguefont;
+}
+
+.texter3{
+  position: absolute;
+    margin-top: 15px;
+    margin-left: 65px;
+    font-family: menufont;
+    font-size: 40px
+}
+
+
+.hide {
+  display: none;
+}
+
+.rock {
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 1;
+  height: 100px;
+  width: 80px;
+  background: transparent;
+}
+
+.taxi {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  z-index: 1;
+  height: 100px;
+  width: 90px;
+  background: transparent;
+  display: all;
+}
+
+.skull {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  height: 90px;
+  width: 90px;
+  background: transparent;
+  display: all;
+}
+
+.fish {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  z-index: 1;
+  height: 50px;
+  width: 90px;
+  background: transparent;
+  display: all;
+}
+
+.fulllava {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 105px;
+  width: 98.5px;
+  background: transparent;
+  display: all;
+}
+
+.pole {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 105px;
+  width: 98.5px;
+  background: transparent;
+  display: all;
+}
+
+.pillar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 666;
+  height: 105px;
+  width: 98.5px;
+  background: transparent;
+  display: all;
+}
+
+.ufo {
+  position: absolute;
+  top: 1.5px;
+  left: -0.75px;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  display: all;
+}
+
+.brock {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: 1;
+  height: 100px;
+  width: 80px;
+  background: transparent;
+  display: all;
+}
+
+.politician {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  margin-left: 32.5px;
+  margin-top: 2.5px;
+}
+
+.mike {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  margin-left: 2.5px;
+  margin-top: 2.5px;
+}
+
+.boris {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 110px;
+  margin-left: 0px;
+  margin-top: 2.5px;
+}
+
+#trump {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  margin-left: 32.5px;
+  margin-top: 2.5px;
+  display: "";
+}
+
+.obama {
+  position: absolute;
+  z-index: 2;
+  height: 105px;
+  width: 95px;
+}
+
+.putin {
+  position: absolute;
+  z-index: 2;
+  height: 105px;
+  width: 95px;
+}
+
+.reagan {
+  position: absolute;
+  z-index: 2;
+  margin-top: -10px;
+  margin-left: -10px;
+  height: 125px;
+  width: 120px;
+}
+
+.kim {
+  position: absolute;
+  z-index: 2;
+  margin-top: -2px;
+  margin-left: -10px;
+  height: 110px;
+  width: 120px;
+}
+
+.hillary {
+  position: absolute;
+  z-index: 2;
+  height: 115px;
+  width: 45px;
+  margin-left: 25px;
+  margin-top: -11px;
+}
+
+.grass {
+  z-index: 0;
+  position: relative;
+  height: 104.2px;
+  width: 98.4px;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+/* This is general classes to be used */
+/* ================================================================================ */
+.noMargin {
+  margin: 0px;
+}
+@font-face {
+  font-family: dialoguefont;
+  src: url(./DTM-Mono.otf);
+}
+
+@font-face {
+  font-family: menufont;
+  src: url(./DTM-Sans.otf);
+}
+
+
+/* Daniel's version of getting boxes to pop up and disappear */
+.boxAppear {
+  display: block;
+}
+
+.boxDisappear {
+  display: none;
+}
