@@ -15,6 +15,16 @@ let duthealth = 35
 let mikehealth = 75
 let trump2health = 150
 
+let ptimer = false
+let rtimer = false
+let ktimer = false
+let htimer = false
+let btimer = false
+let dtimer = false
+let mtimer = false
+let ttimer = false
+
+
 
   document.addEventListener("click", function (event){
     console.log(event);
@@ -171,143 +181,212 @@ function LincolnFunction() {
 
 //Function to disable reactivation of putins textbox
 function PutinFunction() {
+  if (ptimer === false) {
   document.getElementById("putintextbox").style.display = "none";
   putinbox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 //Function to disable reactivation of Reagans textbox
 function ReaganFunction() {
+  if (rtimer === false) {
   document.getElementById("reagantextbox").style.display = "none";
   reaganbox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function KimFunction() {
+  if (ktimer === false) {
   document.getElementById("kimtextbox").style.display = "none";
   kimbox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function HillaryFunction() {
+  if (htimer === false) {
   document.getElementById("hillarytextbox").style.display = "none";
   hillarybox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function BorisFunction() {
+  if (btimer === false) {
   document.getElementById("boristextbox").style.display = "none";
   borisbox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function DutFunction() {
+  if (dtimer === false) {
   document.getElementById("duttextbox").style.display = "none";
   dutbox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function MikeFunction() {
+  if (mtimer === false) {
   document.getElementById("miketextbox").style.display = "none";
   mikebox = false;
   lock = false;
   exp = exp + 1;
   genWin();
-};
+}};
 
 function Trump2Function() {
+  if (ttimer === false) {
   document.getElementById("trump2textbox").style.display = "none";
   trump2box = false;
   lock = false;
   exp = exp + 1;
   genWin();
   window.location.replace("../Project3/EndScreen/HTML/win.html");
-};
+}};
 
 //Function to fight putin
 function putinfight() {
+
+if (ptimer === false){
+  ptimer = true;
+  console.log(ptimer);
+
   putinhealth = putinhealth - Math.floor(Math.random() * 30) - (atk*3);
 
   // Can be found in battle.js
   callGifAttack();
 
 
-  hp = hp - Math.floor(Math.random() * (30 - (def*2)));
+  hp = hp - Math.floor(Math.random() * (28 - (def*2)));
+
+function PtimerFunction() {
+  setTimeout(function(){ ptimer = false; console.log(ptimer); }, 3300);
 };
+PtimerFunction();  
+
+}};
 
 //Function to fight reagan
 function reaganfight() {
+  if (rtimer === false){
+    rtimer = true;
   reaganhealth = reaganhealth - Math.floor(Math.random() * 27) - (atk*3);
 
   // Can be found in battle.js
   callGifAttack();
   
   
-  hp = hp - Math.floor(Math.random() * (36-(def*2)));
+  hp = hp - Math.floor(Math.random() * (32-(def*2)));
+
+  function rtimerFunction() {
+    setTimeout(function(){ rtimer = false; console.log(rtimer); }, 3300);
   };
+  rtimerFunction();  
+  }};
 
 //Function to fight kim
 function kimfight() {
+  if (ktimer === false){
+    ktimer = true;
   kimhealth = kimhealth - Math.floor(Math.random() * 45) - (atk*3);
   callGifAttack();
     
     
   hp = hp - Math.floor(Math.random() * (24-(def*2)));
+
+  function ktimerFunction() {
+    setTimeout(function(){ ktimer = false; console.log(ktimer); }, 3300);
   };
+  ktimerFunction();
+  }};
 
   //Function to fight hillary
 function hillaryfight() {
+  if (htimer === false){
+    htimer = true;
   hillaryhealth = hillaryhealth - Math.floor(Math.random() * 39) - (atk*3);
   callGifAttack();
     
     
-  hp = hp - Math.floor(Math.random() * (27-(def*2)));
+  hp = hp - Math.floor(Math.random() * (25-(def*2)));
+
+  function htimerFunction() {
+    setTimeout(function(){ htimer = false; console.log(htimer); }, 3300);
   };
+  htimerFunction();
+  }};
 
   //Function to fight boris
 function borisfight() {
+  if (btimer === false){
+    btimer = true;
   borishealth = borishealth - Math.floor(Math.random() * 42) - (atk*3);
   callGifAttack();
     
-    
-  hp = hp - Math.floor(Math.random() * (33-(def*2)));
+  
+  hp = hp - Math.floor(Math.random() * (30-(def*2)));
+
+  function btimerFunction() {
+    setTimeout(function(){ btimer = false; console.log(btimer); }, 3300);
   };
+  btimerFunction();
+  }};
+
   //Function to fight dut
 function dutfight() {
+  if (dtimer === false){
+    dtimer = true;
   duthealth = duthealth - Math.floor(Math.random() * 48) - (atk*3);
   callGifAttack();
     
     
   hp = hp - Math.floor(Math.random() * (21-(def*2)));
+
+  function dtimerFunction() {
+    setTimeout(function(){ dtimer = false; console.log(dtimer); }, 3300);
   };
+  dtimerFunction();
+  }};
+
   //Function to fight mike
 function mikefight() {
+  if (mtimer === false){
+    mtimer = true;
   mikehealth = mikehealth - Math.floor(Math.random() * 30) - (atk*3);
   callGifAttack();
     
     
   hp = hp - Math.floor(Math.random() * (36-(def*2)));
+  function mtimerFunction() {
+    setTimeout(function(){ mtimer = false; console.log(mtimer); }, 3300);
   };
+  mtimerFunction();
+  }};
+
   //Function to fight trump2
 function trump2fight() {
+  if (ttimer === false){
+    ttimer = true;
   trump2health = trump2health - Math.floor(Math.random() * 30) - (atk*3);
   callGifAttack();
     
     
   hp = hp - Math.floor(Math.random() * (45-(def*2)));
+  function ttimerFunction() {
+    setTimeout(function(){ ttimer = false; console.log(ttimer); }, 3300);
   };
+  ttimerFunction();
+  }};
 
 // JavaScript function that wraps controls
 const stickFigure = $(".stick");
