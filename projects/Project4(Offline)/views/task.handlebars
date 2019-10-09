@@ -1,0 +1,39 @@
+<!-- Navagator with links -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <a class="navbar-brand">Doppelganger</a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="/profile">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="/logout">Log Out</a>
+      </li>
+    </ul>
+  </nav>
+
+<div class="container containerlog">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Job</h5>
+          <p>
+            <strong>ID</strong>: {{task.id}}</p>
+          <p>
+            <p>
+              <strong>Title</strong>: {{task.text}}</p>
+            <p>
+              <strong>Description:</strong> {{task.description}}</p>
+            <p>
+              <strong>Category:</strong> {{task.category}}</p>
+            <p>
+              <strong>Location:</strong> {{task.city}}</p>
+            <a href="/">← Back To Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
