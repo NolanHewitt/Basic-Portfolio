@@ -1,6 +1,6 @@
 //Winning number generator (Between 50 and 100)
 let winningnumber = Math.floor(Math.random() * 51)+50;
-document.getElementById("goal").innerHTML = "Get " + winningnumber +" points to win!";
+document.getElementById("goal").innerHTML = "Get exactly " + winningnumber +" points to win!";
 
 
 //Score variable
@@ -33,6 +33,7 @@ let rng4 = Math.floor(Math.random() * 7)+3;
         wins = wins+1;
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         score=0;
+        document.getElementById("score").innerHTML = "Score: " + score;
         rng1 = Math.floor(Math.random() * 7)+3;
         rng2 = Math.floor(Math.random() * 7)+3;
         rng3 = Math.floor(Math.random() * 7)+3;
@@ -46,6 +47,7 @@ let rng4 = Math.floor(Math.random() * 7)+3;
         losses = losses+1;
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         score=0;
+        document.getElementById("score").innerHTML = "Score: " + score;
         rng1 = Math.floor(Math.random() * 7)+3;
         rng2 = Math.floor(Math.random() * 7)+3;
         rng3 = Math.floor(Math.random() * 7)+3;
