@@ -1,0 +1,38 @@
+body {
+    background: black;
+    color: white;
+}
+#button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#exit {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    margin-left: 94.6%;
+    font-size: 20px;
+    cursor:pointer;
+}
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -1;
+  }
+  #bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }
