@@ -251,7 +251,7 @@ function Trump2Function() {
   lock = false;
   exp = exp + 1;
   genWin();
-  window.location.replace("../Project3/EndScreen/HTML/win.html");
+  window.location.replace("../Project4/EndScreen/HTML/win.html");
 }};
 
 //Function to fight putin
@@ -460,7 +460,7 @@ document.getElementById("pdef").innerHTML = "Defense: " + def;
 document.getElementById("patk").innerHTML = "Attack: " + atk;
 
 if (hp === 0) {
-  window.location.replace("../Project3/EndScreen/HTML/battle.html");
+  window.location.replace("../Project4/EndScreen/HTML/battle.html");
 };
 
 if (worldsector === 11) {
