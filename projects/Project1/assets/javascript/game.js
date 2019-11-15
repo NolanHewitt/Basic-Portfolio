@@ -23,7 +23,7 @@ let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.l
         guesses=6;
         document.getElementById("win").innerHTML = "Wins: " + wins;
         allchoices = "";
-        let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         console.log(computerGuess);
     }
 
@@ -41,7 +41,7 @@ let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.l
         losses++;
         document.getElementById("lose").innerHTML = "Losses: " + losses;
         allchoices = "";
-        let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         console.log(computerGuess);
     }
 }
